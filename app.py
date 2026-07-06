@@ -54,8 +54,8 @@ from fastapi import FastAPI
 from API.routes import router
 
 app = FastAPI(
-    title="LumiAI Todo Agent",
-    description="An AI-powered Todo List Generator using FastAPI and Gemini",
+    title="TaskPilot AI",
+    description="An AI-powered Multi-Agent Todo List Generator",
     version="1.0.0"
 )
 
@@ -63,9 +63,9 @@ app = FastAPI(
 @app.get("/")
 def home():
     return {
-        "message": "Welcome to LumiAI Todo Agent 🚀",
-        "docs": "http://127.0.0.1:8000/docs"
-    }
+    "message": "Welcome to TaskPilot AI 🚀",
+    "docs": "http://127.0.0.1:8000/docs"
+}
 
 
 app.include_router(router)
